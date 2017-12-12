@@ -9,6 +9,7 @@
   display: flex;
   align-items: stretch;
   width: 100%;
+  border-bottom: 1px solid $input-border-color;
 
   .form-control {
     // Ensure that the input is always above the *appended* addon button for
@@ -20,6 +21,7 @@
     // the column. Applies to IE Edge+ and Firefox. Chrome does not require this.
     width: 1%;
     margin-bottom: 0;
+    border: 0;
 
     // Bring the "active" form control to the front
     @include hover-focus-active {
@@ -85,8 +87,9 @@
   line-height: $input-line-height;
   color: $input-group-addon-color;
   text-align: center;
-  background-color: $input-group-addon-bg;
-  border: $input-border-width solid $input-group-addon-border-color;
+  // background-color: $input-group-addon-bg;
+  // border: $input-border-width solid $input-group-addon-border-color;
+
   @include border-radius($input-border-radius);
 
   // Sizing

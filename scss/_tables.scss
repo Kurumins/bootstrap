@@ -11,13 +11,13 @@
   th,
   td {
     padding: $table-cell-padding;
-    vertical-align: top;
+    // vertical-align: top;
     border-top: $table-border-width solid $table-border-color;
   }
 
   thead th {
-    vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
+    // vertical-align: bottom;
+    // border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
   tbody + tbody {
@@ -57,7 +57,7 @@
   thead {
     th,
     td {
-      border-bottom-width: (2 * $table-border-width);
+      // border-bottom-width: (2 * $table-border-width);
     }
   }
 }
@@ -93,7 +93,7 @@
 // inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
-  @include table-row-variant($color, theme-color-level($color, -9));
+  @include table-row-variant($color, theme-color-level($color, -1.5));
 }
 
 @include table-row-variant(active, $table-active-bg);
