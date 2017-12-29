@@ -22,6 +22,7 @@
     width: 1%;
     margin-bottom: 0;
     border: 0;
+    background: transparent;
 
     // Bring the "active" form control to the front
     @include hover-focus-active {
@@ -82,7 +83,7 @@
 .input-group-addon {
   padding: $input-padding-y $input-padding-x;
   margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
-  font-size: $font-size-base; // Match inputs
+  font-size: 13px;//$font-size-base; // Match inputs
   font-weight: $font-weight-normal;
   line-height: $input-line-height;
   color: $input-group-addon-color;
