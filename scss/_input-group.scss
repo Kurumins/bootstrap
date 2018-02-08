@@ -95,7 +95,7 @@
   margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
   font-size: 13px;//$font-size-base; // Match inputs
   font-weight: $font-weight-normal;
-  line-height: $input-line-height;
+  line-height: $font-size-base*$input-line-height;
   color: $input-group-addon-color;
   text-align: center;
   white-space: nowrap;

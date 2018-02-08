@@ -215,6 +215,24 @@ select.form-control-lg {
   position: absolute;
   margin-top: $form-check-input-margin-y;
   margin-left: -$form-check-input-gutter;
+  width: 20px;
+  height: 20px;
+  // border: 0;
+  // background: none;
+  appearance: none;
+  background: $info;
+  // background: #00add7;
+
+  &:checked ~ .form-check-label:before {
+    content: "";
+    position: absolute;
+    margin-left: -$form-check-input-gutter;
+    border: solid white;
+    border-width: 0 0 1.5px 1.5px;
+    width: 13px;
+    height: 6px;
+    transform: rotateZ(-57deg) translateX(-3px) translateY(6px);
+  }
 
   &:disabled ~ .form-check-label {
     color: $text-muted;
